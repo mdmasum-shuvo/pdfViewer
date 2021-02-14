@@ -1,0 +1,3 @@
+include ':pdf_view'
+include ':app'
+rootProject.name = "PdfSample"

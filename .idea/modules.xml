@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PdfSample.iml" filepath="$PROJECT_DIR$/.idea/modules/PdfSample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PdfSample.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PdfSample.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/pdf_view/PdfSample.pdf_view.iml" filepath="$PROJECT_DIR$/.idea/modules/pdf_view/PdfSample.pdf_view.iml" />
+    </modules>
+  </component>
+</project>
