@@ -11,7 +11,28 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentTop="true" />
+    <RelativeLayout
+        android:id="@+id/layout_navigate_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
 
+        <ImageView
+            android:id="@+id/iv_previous"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:padding="8dp"
+            android:src="@drawable/arrow_left" />
+
+        <ImageView
+            android:id="@+id/iv_next"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:padding="8dp"
+            android:src="@drawable/arrow_right" />
+    </RelativeLayout>
     <ProgressBar
         android:id="@+id/progress"
         style="?android:attr/progressBarStyle"
