@@ -6,10 +6,10 @@
 
     <application android:supportsRtl="true">
         <activity android:name=".AppinionPdfActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+            android:theme="@style/AppTheme"></activity>
         <activity
             android:name=".AppinionPdfViewActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+  />
     </application>
 
 </manifest>

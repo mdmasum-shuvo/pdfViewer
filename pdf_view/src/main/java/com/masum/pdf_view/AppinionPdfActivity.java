@@ -1,9 +1,11 @@
 package com.masum.pdf_view;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -29,13 +31,13 @@ public class AppinionPdfActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_appinion_pdf_view);
 
+        initToolbar();
         pdfView = findViewById(R.id.pdfView);
         progress = findViewById(R.id.progress);
-        String url=getIntent().getStringExtra("pdf");
+        String url = getIntent().getStringExtra("pdf");
         imageViewLeft = findViewById(R.id.iv_previous);
         imageViewRight = findViewById(R.id.iv_next);
         showPdfFile(url);
-
 
 
         imageViewLeft.setOnClickListener(new View.OnClickListener() {
@@ -68,7 +70,7 @@ public class AppinionPdfActivity extends AppCompatActivity {
         pdfView.invalidate();
         pdfView.getSettings().setJavaScriptEnabled(true);
         pdfView.getSettings().setSupportZoom(true);
-        pdfView.loadUrl(Constant.VIEW_URL+pdfUrl);
+        pdfView.loadUrl(Constant.VIEW_URL + pdfUrl);
         pdfView.setWebViewClient(new WebViewClient() {
             boolean checkOnPageStartedCalled = false;
 
@@ -97,5 +99,20 @@ public class AppinionPdfActivity extends AppCompatActivity {
         progress.setVisibility(View.GONE);
     }
 
+    private void initToolbar() {
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setTitle("Incentive Policy");
+
+
+    }
+
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == android.R.id.home) {
+            finish();
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }
 

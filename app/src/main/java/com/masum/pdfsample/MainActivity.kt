@@ -11,7 +11,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         findViewById<Button>(R.id.btn).setOnClickListener {
-            var intent = Intent(this, AppinionPdfActivity::class.java).putExtra("pdf", "http://www.pdf995.com/samples/pdf.pdf")
+            var intent = Intent(this, AppinionPdfActivity::class.java).putExtra(
+                "pdf",
+                "http://mis.renata-ltd.com/upload/incentive_policy/incentive_policy.pdf")
             startActivity(intent)
         }
 
