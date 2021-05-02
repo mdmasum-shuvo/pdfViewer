@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.btn).setOnClickListener {
             var intent = Intent(this, AppinionPdfActivity::class.java).putExtra(
                 "pdf",
-                "http://mis.renata-ltd.com/upload/incentive_policy/incentive_policy.pdf")
+                "http://mis.renata-ltd.com/upload/incentive_policy/incentive_policy.pdf").putExtra("title","Title")
             startActivity(intent)
         }
 
